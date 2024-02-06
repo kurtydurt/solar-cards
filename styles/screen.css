@@ -1,19 +1,28 @@
+:root {
+    --earth-venus-size: 10vw;
+    --mars-mercury-size: 5vw;
+    --jupiter-saturn-size: 13vw;
+    --neptune-uranus-size: 10vw;
+}
+
 body {
     padding: 20px;
-    background: dimgray;
+    background: #050203;
+}
+
+.title {
+    color: white;
 }
 .planet {
-    height: 20%;
-    width: 10%;
-    background-color: #bbb;
+    background-color: #676565;
     border-radius: 50%;
     display: inline-block;
 }
 
 .card {
     border-radius: 10px;
-    background-color: slategrey;
-    padding: 10px;
+    background-color: #d2d4d9;
+    padding: 7%;
     text-align: center;
     transition: .5s;
 }
@@ -34,5 +43,76 @@ main {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
+    padding-top: 20%;
+}
+
+.card.Mercury {
     padding-top: 30%;
 }
+
+.card.Mars {
+    padding-top: 30%;
+}
+
+.card.Neptune {
+    padding-top: 15%;
+}
+
+.card.Uranus {
+    padding-top: 15%;
+}
+
+.planet.Sun {
+    background-color: #ffdf08;
+    height: 20vw;
+    width: 20vw;
+}
+
+.planet.Mercury {
+    background-color: #413e27;
+    height: var(--mars-mercury-size);
+    width: var(--mars-mercury-size);
+}
+
+.planet.Venus {
+    background-color: #d8f593;
+    height: var(--earth-venus-size);
+    width: var(--earth-venus-size);
+}
+
+.planet.Earth {
+    background-color: #085eff;
+    height: var(--earth-venus-size);
+    width: var(--earth-venus-size);
+}
+
+.planet.Mars {
+    background-color: #fa410b;
+    height: var(--mars-mercury-size);
+    width: var(--mars-mercury-size);
+}
+
+.planet.Jupiter {
+    background-color: #c9924a;
+    height: var(--jupiter-saturn-size);
+    width: var(--jupiter-saturn-size);
+}
+
+.planet.Saturn {
+    background-color: #ccaf78;
+    height: var(--jupiter-saturn-size);
+    width: var(--jupiter-saturn-size);
+}
+
+.planet.Uranus {
+    background-color: #b0f6f1;
+    height: var(--neptune-uranus-size);
+    width: var(--neptune-uranus-size);
+}
+
+.planet.Neptune {
+    background-color: #092cce;
+    height: var(--neptune-uranus-size);
+    width: var(--neptune-uranus-size);
+}
+
